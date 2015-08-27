@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title></title>
+
+<script type="text/javascript" src="js/editimage.js?ver=327"></script>
+<script type="text/javascript" src="../../utils/form_utils.js?ver=3223"></script>
+
+<link rel="stylesheet" href="css/editimage.css?ver=327" type="text/css" media="all" />
+
+<script type="text/javascript">
+if ( 'rtl' == tinyMCEPopup.editor.getParam('directionality','') )
+	document.write('<link rel="stylesheet" href="css/editimage-rtl.css?ver=3223" type="text/css" media="all" />');
+</script>
+<base target="_self" />
+</head>
+
+<body id="media-upload" style="display:none;">
+<div id="media-upload-header">
+	<ul id="sidemenu">
+	<li><a href="javascript:;" id="tab_basic" class="current" >{#wpeditimage.edit_img}</a></li>
+	</ul>
+</div>
+
+<div id="img-edit">
+<form class="media-upload-form" action="" onsubmit="foterImage.update();">
+	
+	<div id="div_basic">
+	<table id="basic" class="describe">
+		<tbody>
+
+		<tr class="align">
+			<th valign="top" scope="row" class="label">
+				<label for="img_align_td">
+				<span class="alignleft">{#contextmenu.align}</span>
+				</label>
+			</th>
+			<td class="field" id="img_align_td">
+				<input type="radio"  name="img_align" id="alignnone" value="alignnone" />
+				<label for="alignnone" class="align image-align-none-label">{#wpeditimage.none}</label>
+
+				<input type="radio"  name="img_align" id="alignleft" value="alignleft" />
+				<label for="alignleft" class="align image-align-left-label">{#contextmenu.left}</label>
+
+				<input type="radio"  name="img_align" id="aligncenter" value="aligncenter" />
+				<label for="aligncenter" class="align image-align-center-label">{#contextmenu.center}</label>
+
+				<input type="radio" name="img_align" id="alignright" value="alignright" />
+				<label for="alignright" class="align image-align-right-label">{#contextmenu.right}</label>
+			</td>
+		</tr>
+
+		<tr>
+			<th valign="top" scope="row" class="label">
+				<label for="img_title">
+				<span class="alignleft">{#wpeditimage.img_title}</span>
+				</label>
+			</th>
+			<td class="field">
+				<input type="text" id="img_title" name="img_title" value="" aria-required="true" size="60" />
+			</td>
+		</tr>
+
+		<tr>
+			<th valign="top" scope="row" class="label">
+				<label for="img_alt">
+				<span class="alignleft">{#wpeditimage.alt}</span>
+				</label>
+			</th>
+			<td class="field">
+				<input type="text" id="img_alt" name="img_alt" value="" size="60" />
+			</td>
+		</tr>
+
+		<tr id="cap_field">
+			<th valign="top" scope="row" class="label">
+				<label for="img_cap">
+				<span class="alignleft">{#wpeditimage.caption}</span>
+				</label>
+			</th>
+			<td class="field">
+				<input type="text" id="img_cap" name="img_cap" value="" size="60" />
+			</td>
+		</tr>
+
+		<tr>
+			<th valign="top" scope="row" class="label">
+				<label for="link_href">
+				<span class="alignleft" id="lb_link_href">{#advanced_dlg.link_url}</span>
+				</label>
+			</th>
+			<td class="field">
+				<input type="text" id="link_href" name="link_href" value="" size="60" /><br />
+				<p class="help">{#wpeditimage.link_help}</p>
+			</td>
+		</tr>
+	</tbody>
+	</table></div>
+
+	<div id="saveeditimg">
+		<input type="hidden" id="align" name="align" value="" />
+
+		<input type="submit" id="saveimg" class="button" value="{#update}" />
+		<input type="button" class="button" id="cancelimg" name="cancelimg" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+	</div>
+</form>
+</div>
+
+</body>
+</html>

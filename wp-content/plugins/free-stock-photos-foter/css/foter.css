@@ -1,0 +1,136 @@
+.foter {
+    background:#ffffff;
+}
+
+.foter #frm-search {
+    margin:20px;
+}
+.foter #breadcrumbs {
+    margin:5px 20px;
+}
+
+.foter .nav-categories {
+    border: 0 none;
+    height: auto;
+    overflow: hidden;
+    padding: 14px 20px 10px;
+    width: 440px;
+}
+
+.foter .nav-categories ul {
+    font-size: 12px;
+    line-height: 24px;
+    list-style: none outside none;
+    margin: 0;
+    overflow: hidden;
+}
+
+.foter .nav-categories li {
+    float: left;
+    padding-right: 10px;
+    width: 130px;
+}
+.foter .nav-categories li a {
+    text-decoration: none;
+}
+
+.foter .thumbs-grid {
+    padding:20px;
+}
+
+.foter .thumbs-grid > li {
+    float: left;
+    height: 110px;
+    padding: 10px 10px 0 0;
+    width: 110px;
+}
+
+.foter .thumbs-grid > li p {
+    margin:0;
+}
+
+.foter .pagination {
+    clear:both;
+    margin:10px 20px;
+}
+
+.foter .foter-wphost {
+    display:none;
+}
+
+.foter #library-form {
+    margin:10px;
+}
+
+.foter .tooltip {
+	display:none;
+	background: #434240;
+	padding: 2px;
+	color:#fff;
+	z-index: 10000;
+	width:320px;
+}
+
+.foter .tooltip > span {
+	display: block;
+	width:320px;
+}
+
+.foter .tooltip > span a {
+	border: 0 none;
+}
+
+.foter .tooltip > span img {
+	margin: 0 auto;	
+        max-height: 320px;
+        display: block;
+        max-width: 100%;
+}
+
+.foter .tooltip ul {
+	overflow: hidden;
+	margin: 0 0 5px;
+	list-style: none;
+	font-size: 10px;
+}
+
+.foter .tooltip li {
+	float: left;
+	margin: 0 0 0 5px;
+}
+
+.foter .tooltip li:first-child {
+	margin: 0;
+}
+
+.foter .tooltip ul a {
+	display: block;
+	background: #dadada;
+	color: #000;
+	border: 1px solid #000;
+	text-transform: uppercase;
+	padding: 0 5px;
+	margin: 4px 0 0;
+}
+
+.foter .tooltip ul a:hover {
+	background: #d7f0fd;
+}
+
+.foter .tooltip ul .blog-this {
+	background: #fff;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 2px 5px;
+	margin: 0;
+}
+
+.foter .tooltip h3, .tooltip p {
+	color: #ececec;
+	margin: 0;
+	line-height: 18px;
+}
+
+.foter .tooltip p {
+	font-size: 11px;
+}
