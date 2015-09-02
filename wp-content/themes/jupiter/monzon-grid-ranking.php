@@ -23,6 +23,7 @@ $args = array( 'numberposts' => $numposts, 'meta_key' => $meta_key, 'orderby' =>
 
 $myposts = get_posts( $args );
 
+$numranking = 0;
 
 foreach( $myposts as $post ) :  setup_postdata($post); 
 
@@ -47,13 +48,20 @@ foreach( $myposts as $post ) :  setup_postdata($post);
 	$category_id=get_cat_ID($cat);
 	$category_link=get_category_link($category_id);
 	
-	if ($meta_key=="fb_likes")
+	if ($meta_key=="fb_likes") {
 		$valor=$likes_fb;
-	else
-		if ($meta_key=="ranking")
+		$numranking++;
+	}
+	else {
+		if ($meta_key=="ranking") {
 			$valor=$ranking;
-		else
+			$numranking++;
+		}
+		else {
 			$valor=$post_views;
+			$numranking++;
+		}
+	}
 
 	if (!($cat_id>0))
 		$cat_id=$category_detail[0]->term_id;
